@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+</head>
+<body>
+
+
+<div class="main">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+                <label for="rad1" class="rad1">案例</label>
+
+                <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"/>
+                <label for="rad2">教学</label>
+
+                <input name="rad" class="opt-3" id="rad3" type="radio" checked="checked" onClick="location.href='homework.html'"/>
+                <label for="rad3">练习</label>
+
+                <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+                <label for="rad4">小结</label>
+
+                <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+                <label for="rad5">作业</label>
+
+                <div class="tracker"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="row1">
+
+
+
+        <div class="col-md-12 col-sm-12">
+
+            <div class="container">
+
+
+                <ul class="ul1">
+                    <li style="margin-top: 50px;">
+                        1.属性指定了背景图像的位置区域( )<br>
+                        <input type="radio" name="a1" value="A" class="a1"><span class="span1"> A.background-image</span><br>
+                        <input type="radio" name="a1" value="B" class="a1"><span class="span1"> B.background-size</span><br>
+                        <input type="radio" name="a1" value="C" class="a1"><span class="span1"> C.background-origin</span><br>
+                        <input type="radio" name="a1" value="D" class="a1"><span class="span1"> D.background-clip</span>
+                    </li><br><br>
+                    <li>
+                        2.CSS中，通过链接伪类可以实现不同的链接状态。下列用来定义未访问时超链接状态的是( )<br>
+                        <input type="radio" name="a2" value="A" class="a1"><span class="span1"> A.a:link</span><br>
+                        <input type="radio" name="a2" value="B" class="a1"><span class="span1"> B.a:visited</span><br>
+                        <input type="radio" name="a2" value="C" class="a1"><span class="span1"> C.a:hover</span><br>
+                        <input type="radio" name="a2" value="D" class="a1"><span class="span1"> D.a:active</span>
+                    </li><br><br>
+                    <li>
+                        3.设置超链接<li>标记中<img>的border样式为none，下列代码书写正确的是( )<br>
+                        <input type="radio" name="a3" value="A" class="a1"><span class="span1"> A.a.img{ border:none;}</span><br>
+                        <input type="radio" name="a3" value="B" class="a1"><span class="span1"> B.a#img{ border:none;}</span><br>
+                        <input type="radio" name="a3" value="C" class="a1"><span class="span1"> C.a img{border:none;}</span><br>
+                        <input type="radio" name="a3" value="D" class="a1"><span class="span1"> D.a.img{border:none;}</span>
+                    </li><br><br>
+                    <li >
+                        4.水平导航条在li中应设置float为( )<br>
+                        <input type="radio" name="a4" value="A" class="a1"><span class="span1"> A.left</span><br>
+                        <input type="radio" name="a4" value="B" class="a1"><span class="span1"> B.right</span><br>
+                        <input type="radio" name="a4" value="C" class="a1"><span class="span1"> C.center</span><br>
+                        <input type="radio" name="a4" value="D" class="a1"><span class="span1"> D.0</span>
+                    </li><br><br>
+                    <li >
+                        5.以下有关列表的说法中，错误的是：( )<br>
+                        <input type="radio" name="a5" value="A" class="a1"><span class="span1"> A.有序列表和无序列表可以互相嵌套。 </span><br>
+                        <input type="radio" name="a5" value="B" class="a1"><span class="span1"> B.指定嵌套列表时，也可以具体指定项目符号或编号样式。</span><br>
+                        <input type="radio" name="a5" value="C" class="a1"><span class="span1"> C.无序列表应使用 ul 和 li 标记符进行创建。 </span><br>
+                        <input type="radio" name="a5" value="D" class="a1"><span class="span1"> D.在创建列表时，li 标记符的结束标记符不可省略。</span>
+                    </li><br><br>
+                    <li>
+                        6.元素使浮动块元素的幻灯片彼此相邻( )<br>
+                        <input type="radio" name="a6" value="A" class="a1"><span class="span1"> A.float:left</span><br>
+                        <input type="radio" name="a6" value="B" class="a1"><span class="span1"> B.float:right</span><br>
+                        <input type="radio" name="a6" value="C" class="a1"><span class="span1"> C.float:0</span><br>
+                        <input type="radio" name="a6" value="D" class="a1"><span class="span1"> D.float:none</span>
+                    </li><br><br>
+                    <li>
+                        7.下列哪个属性能够设置盒模型的左侧外边距？( )<br>
+                        <input type="radio" name="a7" value="A" class="a1"><span class="span1"> A.margin：</span><br>
+                        <input type="radio" name="a7" value="B" class="a1"><span class="span1"> B.padding-left：</span><br>
+                        <input type="radio" name="a7" value="C" class="a1"><span class="span1"> C.margin-left</span><br>
+                        <input type="radio" name="a7" value="D" class="a1"><span class="span1"> D.padding:</span>
+                    </li><br><br>
+                    <li>
+                        8.关于边框，以下描述不正确的是( )<br>
+                        <input type="radio" name="a8" value="A" class="a1"><span class="span1"> A.border-top-width</span><br>
+                        <input type="radio" name="a8" value="B" class="a1"><span class="span1"> B.border-style</span><br>
+                        <input type="radio" name="a8" value="C" class="a1"><span class="span1"> C.border-height</span><br>
+                        <input type="radio" name="a8" value="D" class="a1"><span class="span1"> D.border-color</span>
+                    </li><br><br>
+                    <li >
+                        9.关于盒子模型，下列说法正确的是( )<br>
+                        <input type="radio" name="a9" value="A" class="a1"><span class="span1"> A.盒子模型是由边框 内边距和盒子内元素3个部分组成</span><br>
+                        <input type="radio" name="a9" value="B" class="a1"><span class="span1"> B.内边距是边框外面周围的间隙</span><br>
+                        <input type="radio" name="a9" value="C" class="a1"><span class="span1"> C.外边距是内容和边框的距离</span><br>
+                        <input type="radio" name="a9" value="D" class="a1"><span class="span1"> D.边框具有一定的厚度，该厚度可以为0，即没有边框</span>
+                    </li><br><br>
+                    <li >
+                        10.属性可为box添加阴影( )<br>
+                        <input type="radio" name="a10" value="A" class="a1"><span class="span1"> A.bow-shadow</span><br>
+                        <input type="radio" name="a10" value="B" class="a1"><span class="span1"> B.box-radius</span><br>
+                        <input type="radio" name="a10" value="C" class="a1"><span class="span1"> C.box-image</span><br>
+                        <input type="radio" name="a10" value="D" class="a1"><span class="span1"> D.box-shadow</span>
+                    </li><br>
+
+
+                <input type="submit" value="提交" class="button button-highlight button-pill button-large" id="submit">
+                <a href="#" id="look">查看答案</a>
+                </ul>
+
+                <ul class="ul2">
+                    <li style="margin-top: 50px;">
+                        1.属性指定了背景图像的位置区域( <span class="red">C</span> )<br>
+                        <input type="radio" name="a1" value="A" class="a1"><span class="span1"> A.background-image</span><br>
+                        <input type="radio" name="a1" value="B" class="a1"><span class="span1"> B.background-size</span><br>
+                        <input type="radio" name="a1" value="C" class="a1"><span class="span1"> C.background-origin</span><br>
+                        <input type="radio" name="a1" value="D" class="a1"><span class="span1"> D.background-clip</span>
+                    </li><br><br>
+                    <li>
+                        2.CSS中，通过链接伪类可以实现不同的链接状态。下列用来定义未访问时超链接状态的是( <span class="red">A</span> )<br>
+                        <input type="radio" name="a2" value="A" class="a1"><span class="span1"> A.a:link</span><br>
+                        <input type="radio" name="a2" value="B" class="a1"><span class="span1"> B.a:visited</span><br>
+                        <input type="radio" name="a2" value="C" class="a1"><span class="span1"> C.a:hover</span><br>
+                        <input type="radio" name="a2" value="D" class="a1"><span class="span1"> D.a:active</span>
+                    </li><br><br>
+                    <li>
+                        3.设置超链接<li>标记中<img>的border样式为none，下列代码书写正确的是( <span class="red">C</span> )<br>
+                    <input type="radio" name="a3" value="A" class="a1"><span class="span1"> A.a.img{ border:none;}</span><br>
+                    <input type="radio" name="a3" value="B" class="a1"><span class="span1"> B.a#img{ border:none;}</span><br>
+                    <input type="radio" name="a3" value="C" class="a1"><span class="span1"> C.a img{border:none;}</span><br>
+                    <input type="radio" name="a3" value="D" class="a1"><span class="span1"> D.a.img{border:none;}</span>
+                </li><br><br>
+                    <li >
+                        4.水平导航条在li中应设置float为( <span class="red">A</span> )<br>
+                        <input type="radio" name="a4" value="A" class="a1"><span class="span1"> A.left</span><br>
+                        <input type="radio" name="a4" value="B" class="a1"><span class="span1"> B.right</span><br>
+                        <input type="radio" name="a4" value="C" class="a1"><span class="span1"> C.center</span><br>
+                        <input type="radio" name="a4" value="D" class="a1"><span class="span1"> D.0</span>
+                    </li><br><br>
+                    <li >
+                        5.以下有关列表的说法中，错误的是：( <span class="red">D</span> )<br>
+                        <input type="radio" name="a5" value="A" class="a1"><span class="span1"> A.有序列表和无序列表可以互相嵌套。 </span><br>
+                        <input type="radio" name="a5" value="B" class="a1"><span class="span1"> B.指定嵌套列表时，也可以具体指定项目符号或编号样式。</span><br>
+                        <input type="radio" name="a5" value="C" class="a1"><span class="span1"> C.无序列表应使用 ul 和 li 标记符进行创建。 </span><br>
+                        <input type="radio" name="a5" value="D" class="a1"><span class="span1"> D.在创建列表时，li 标记符的结束标记符不可省略。</span>
+                    </li><br><br>
+                    <li>
+                        6.元素使浮动块元素的幻灯片彼此相邻( <span class="red">A</span> )<br>
+                        <input type="radio" name="a6" value="A" class="a1"><span class="span1"> A.float:left</span><br>
+                        <input type="radio" name="a6" value="B" class="a1"><span class="span1"> B.float:right</span><br>
+                        <input type="radio" name="a6" value="C" class="a1"><span class="span1"> C.float:0</span><br>
+                        <input type="radio" name="a6" value="D" class="a1"><span class="span1"> D.float:none</span>
+                    </li><br><br>
+                    <li>
+                        7.下列哪个属性能够设置盒模型的左侧外边距？( <span class="red">C</span> )<br>
+                        <input type="radio" name="a7" value="A" class="a1"><span class="span1"> A.margin：</span><br>
+                        <input type="radio" name="a7" value="B" class="a1"><span class="span1"> B.padding-left：</span><br>
+                        <input type="radio" name="a7" value="C" class="a1"><span class="span1"> C.margin-left</span><br>
+                        <input type="radio" name="a7" value="D" class="a1"><span class="span1"> D.padding:</span>
+                    </li><br><br>
+                    <li>
+                        8.关于边框，以下描述不正确的是( <span class="red">C</span> )<br>
+                        <input type="radio" name="a8" value="A" class="a1"><span class="span1"> A.border-top-width</span><br>
+                        <input type="radio" name="a8" value="B" class="a1"><span class="span1"> B.border-style</span><br>
+                        <input type="radio" name="a8" value="C" class="a1"><span class="span1"> C.border-height</span><br>
+                        <input type="radio" name="a8" value="D" class="a1"><span class="span1"> D.border-color</span>
+                    </li><br><br>
+                    <li >
+                        9.关于盒子模型，下列说法正确的是( <span class="red">D</span> )<br>
+                        <input type="radio" name="a9" value="A" class="a1"><span class="span1"> A.盒子模型是由边框 内边距和盒子内元素3个部分组成</span><br>
+                        <input type="radio" name="a9" value="B" class="a1"><span class="span1"> B.内边距是边框外面周围的间隙</span><br>
+                        <input type="radio" name="a9" value="C" class="a1"><span class="span1"> C.外边距是内容和边框的距离</span><br>
+                        <input type="radio" name="a9" value="D" class="a1"><span class="span1"> D.边框具有一定的厚度，该厚度可以为0，即没有边框</span>
+                    </li><br><br>
+                    <li >
+                        10.属性可为box添加阴影( <span class="red">D</span> )<br>
+                        <input type="radio" name="a10" value="A" class="a1"><span class="span1"> A.bow-shadow</span><br>
+                        <input type="radio" name="a10" value="B" class="a1"><span class="span1"> B.box-radius</span><br>
+                        <input type="radio" name="a10" value="C" class="a1"><span class="span1"> C.box-image</span><br>
+                        <input type="radio" name="a10" value="D" class="a1"><span class="span1"> D.box-shadow</span>
+                    </li><br>
+
+
+                    <input type="submit" value="返回" class="button button-highlight button-pill button-large" id="back">
+
+                </ul>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <button class="trainning1"  onClick="location.href='write.html'">实训平台</button>
+    </div>
+</div>
+</body>
+</html>

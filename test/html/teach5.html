@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学——圆角</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+    <link rel="stylesheet" href="../css/teach.css">
+</head>
+<body>
+
+
+
+
+<div class="main" style="">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper">
+            <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+            <label for="rad1">案例</label>
+
+            <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"  checked="checked"/>
+            <label for="rad2">教学</label>
+
+            <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+            <label for="rad3">练习</label>
+
+            <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+            <label for="rad4">小结</label>
+
+            <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+            <label for="rad5">作业</label>
+
+            <div class="tracker"></div>
+         </div>
+    </div>
+</div>
+
+<div class="row" id="row2">
+
+
+
+            <div class="col-md-1 col-sm-12">
+                <div class="columns">
+
+                    <div class="container2">
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach.html'">第一章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach2.html'">第二章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach3.html'">第三章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach4.html'">第四章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach5.html'">第五章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach6.html'">第六章</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8  col-sm-12 ">
+                <div class="container">
+                    <ul id="tabs">
+
+                     <li><a href="#" name="#tab1">图文</a></li>
+
+                     <li><a href="#" name="#tab2">视频</a></li>
+
+                     <li><a href="#" name="#tab3">小练习</a></li>
+
+                    </ul>
+                <div id="content">
+
+                        <div id="tab1">
+                            <h2>导航栏的圆角边框</h2>
+                            1、CSS3中添加了以下<span class="red">三个</span>属性。
+                            <ul>
+                                <li>border-radius</li>
+                                <li>box-shadow</li>
+                                <li>border-image</li>
+                            </ul>
+                            <span class="red">border-radius</span> 用于创建圆角边框。 box-shadow 为元素添加阴影。 border-image 可以将图像指定为边框。
+                            圆角边框
+
+                            您可以使用边框半径功能创建带圆角的边框。
+                            下面是与此功能关联的五个属性。
+                            <ul>
+                                <li>border-top-left-radius<br>
+                                border-top-right-radius<br>
+                                border-bottom-left-radius<br>
+                                border-bottom-right- radius<br>
+                                    设置<span class="red">单个拐角</span>的半径。
+                                    Value:一对长度或百分比值。 百分比与边框的宽度和高度有关。</li>
+                                <li>border-radius
+                                此简写属性会立即设置所有角。<br>
+                                    Value:一对或四对长度或百分比值，用/字符分隔。</li>
+                            </ul>
+
+                            2、CSS3 <span class="red">box-shadow</span>属性<br>
+
+                            我们可以使用CSS3中的box-shadow属性为box添加阴影。<br><br>
+
+                            3、CSS3 <span class="red">border-image</span>属性<br>
+
+                            border-image属性指定要用作边框的图像。<br>
+                        </div>
+
+                        <div id="tab2">
+                        </div>
+                        <div id="tab3">
+                        </div>
+                </div>
+                 </div>
+            </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="/demos/googlegg.js"></script>
+
+<script>
+    //For Demo only
+    var links = document.getElementsByClassName('link');
+    for(var i = 0; i <= links.length; i++)
+        addClass(i)
+
+
+    function addClass(id){
+        setTimeout(function(){
+            if(id > 0) links[id-1].classList.remove('hover');
+            links[id].classList.add('hover')
+        }, id*750)
+    }
+    var heightTol=$(window).height();
+    $(".main").height(heightTol);
+</script>
+<script>
+
+    function resetTabs(){
+
+        $("#content > div").hide(); //Hide all content
+
+        $("#tabs a").attr("id",""); //Reset id's
+
+    }
+
+
+
+    var myUrl = window.location.href; //get URL
+
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2
+
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+
+
+    (function(){
+
+        $("#content > div").hide(); // Initially hide all content
+
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+
+        $("#content > div:first").fadeIn(); // Show first tab content
+
+
+
+        $("#tabs a").on("click",function(e) {
+
+            e.preventDefault();
+
+            if ($(this).attr("id") == "current"){ //detection for current tab
+
+                return
+
+            }
+
+            else{
+
+                resetTabs();
+
+                $(this).attr("id","current"); // Activate this
+
+                $($(this).attr('name')).fadeIn(); // Show content for current tab
+
+            }
+
+        });
+
+
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+
+            if (myUrlTab == myUrlTabName + i) {
+
+                resetTabs();
+
+                $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+
+                $(myUrlTab).fadeIn(); // Show url tab content
+
+            }
+
+        }
+
+    })()
+
+</script>
+
+
+
+<script src="http://www.jq22.com/js/jq.js"></script>
+
+</body>
+</html>

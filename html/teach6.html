@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学——背景图</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+    <script src="../js/teach.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+    <link rel="stylesheet" href="../css/teach.css">
+</head>
+<body>
+
+
+
+
+<div class="main" style="">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper">
+            <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+            <label for="rad1">案例</label>
+
+            <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"  checked="checked"/>
+            <label for="rad2">教学</label>
+
+            <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+            <label for="rad3">练习</label>
+
+            <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+            <label for="rad4">小结</label>
+
+            <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+            <label for="rad5">作业</label>
+
+            <div class="tracker"></div>
+         </div>
+    </div>
+</div>
+
+<div class="row" id="row2">
+
+
+
+            <div class="col-md-1 col-sm-12">
+                <div class="columns">
+
+                    <div class="container2">
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach.html'">第一章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach2.html'">第二章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach3.html'">第三章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach4.html'">第四章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach5.html'">第五章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach6.html'">第六章</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8  col-sm-12 ">
+                <div class="container">
+                    <ul id="tabs">
+
+                     <li><a href="#" name="#tab1">图文</a></li>
+
+                     <li><a href="#" name="#tab2">视频</a></li>
+
+                     <li><a href="#" name="#tab3">小练习</a></li>
+
+                    </ul>
+                <div id="content">
+
+                        <div id="tab1">
+                        <audio controls="controls" style="width:150px; float:right;">
+                              <source src="../vedio/music1.mp3" type="audio/ogg">
+                              
+                        Your browser does not support the audio tag.
+                        </audio>
+                            <h2>第六章 导航栏的背景美化</h2>
+                            1、<span class="red">CSS3 背景</span>
+                            CSS3中包含几个新的背景属性，提供更大背景元素控制。
+                            在本章您将了解以下背景属性：
+                            <ul>
+                                <li>background-image</li>
+                                <li>background-size</li>
+                                <li>background-origin</li>
+                                <li>background-clip</li>
+                            </ul>
+                            您还将学习如何使用多重背景图像。<br><br>
+
+                            2、CSS3 <span class="red">background-image</span>属性<br>
+                            CSS3中可以通过background-image属性添加<span class="red">背景图片</span>。
+                            不同的背景图像和图像用逗号隔开，所有的图片中显示在最顶端的为第一张。<br><br>
+
+                            3、CSS3 <span class="red">background-size </span>属性<br>
+                            background-size指定背景图像的大小。CSS3以前，背景图像大小由图像的实际大小决定。
+                            CSS3中可以指定背景图片，让我们重新在不同的环境中指定背景图片的大小。您可以指定像素或百分比大小。
+                            你指定的大小是相对于父元素的宽度和高度的百分比的大小。<br><br>
+
+                            4、CSS3的background-Origin属性<br>
+                            background-Origin属性指定了背景图像的<span class="red">位置区域</span>。
+                            content-box, padding-box,和 border-box区域内可以放置背景图像。<br><br>
+
+                            5、CSS3 <span class="red">多个背景</span>图像<br>
+                            CSS3 允许你在元素
+                            那个添加多个背景图像。<br><br>
+
+                            6、CSS3 background-clip属性<br>
+                            CSS3中background-clip背景剪裁属性是从<span class="red">指定位置</span>开始<span class="red">绘制</span>。<br><br>
+                        </div>
+
+                        <div id="tab2">
+                            <h2>第六章 导航栏的背景美化</h2>
+                            <iframe height=498 width=100% src='http://player.youku.com/embed/XMzAxOTIxODY5Mg==' frameborder=0 allowfullscreen></iframe>
+                        </div>
+                        <div id="tab3">
+                            <h2>第六章 导航栏的背景美化</h2>
+                            <ul>
+                                <li id="li1" style="list-style-type: none;">
+                                    1.读取localStorage数据的方法是( )<br>
+                                    <input type="radio" name="work1" value="A" id="test1"><span class="span2">
+                                    <label for="test1"> A.localStorage.getItem("键名");</label></span><br>
+                                    <input type="radio" name="work1" value="B" id="test2"><span class="span2">
+                                    <label for="test2">B.localStorage.getItem("键值");</label></span><br>
+                                    <input type="radio" name="work1" value="C" id="test3"><span class="span2">
+                                    <label for="test3">C.localStorage.localItem("键值");</label></span><br>
+                                    <input type="radio" name="work1" value="D" id="test4"><span class="span2">
+                                    <label for="test4">D.localStorage.localItem("键名");</label></span><br>
+                                    <input type="button" id="testA1" value="提交">
+                                    <input type="button" id="next1" value="下一题"><br>
+                                    <p class="p1"></p>
+                                </li>
+                                <li id="li2" style="list-style-type: none;">
+                                    2.在一个&lt;img&gt;标记中决定图片文件位置的是哪个属性( )<br>
+                                    <input type="radio" name="work2" value="A" id="test5"><span class="span2">
+                                    <label for="test5"> A.alt</label></span><br>
+                                    <input type="radio" name="work2" value="B" id="test6"><span class="span2">
+                                    <label for="test6">B.title</label></span><br>
+                                    <input type="radio" name="work2" value="C" id="test7"><span class="span2">
+                                    <label for="test7">C.src</label></span><br>
+                                    <input type="radio" name="work2" value="D" id="test8"><span class="span2">
+                                    <label for="test8">D.href</label></span><br>
+                                    <input type="button" id="testA2" value="提交">
+                                    <button id="preBtn">上一题</button>
+                                    <input type="button" id="next2" value="下一题"><br>
+                                    <p class="p1"></p>
+                                </li>
+
+                            </ul>
+                        </div>
+                </div>
+                 </div>
+            </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="/demos/googlegg.js"></script>
+
+<script>
+    //For Demo only
+    var links = document.getElementsByClassName('link');
+    for(var i = 0; i <= links.length; i++)
+        addClass(i)
+
+
+    function addClass(id){
+        setTimeout(function(){
+            if(id > 0) links[id-1].classList.remove('hover');
+            links[id].classList.add('hover')
+        }, id*750)
+    }
+    var heightTol=$(window).height();
+    $(".main").height(heightTol);
+</script>
+<script>
+
+    function resetTabs(){
+
+        $("#content > div").hide(); //Hide all content
+
+        $("#tabs a").attr("id",""); //Reset id's
+
+    }
+
+
+
+    var myUrl = window.location.href; //get URL
+
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2
+
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+
+
+    (function(){
+
+        $("#content > div").hide(); // Initially hide all content
+
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+
+        $("#content > div:first").fadeIn(); // Show first tab content
+
+
+
+        $("#tabs a").on("click",function(e) {
+
+            e.preventDefault();
+
+            if ($(this).attr("id") == "current"){ //detection for current tab
+
+                return
+
+            }
+
+            else{
+
+                resetTabs();
+
+                $(this).attr("id","current"); // Activate this
+
+                $($(this).attr('name')).fadeIn(); // Show content for current tab
+
+            }
+
+        });
+
+
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+
+            if (myUrlTab == myUrlTabName + i) {
+
+                resetTabs();
+
+                $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+
+                $(myUrlTab).fadeIn(); // Show url tab content
+
+            }
+
+        }
+
+    })()
+
+</script>
+
+
+
+<script src="http://www.jq22.com/js/jq.js"></script>
+
+</body>
+</html>

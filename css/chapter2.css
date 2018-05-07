@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:900");
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Merriweather', serif;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1.95;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+.strips {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+    grid-template-columns: repeat(10, 1fr);
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.strip {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.strip .content {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    width: 0;
+}
+.strip .content h1,
+.strip .content p {
+    opacity: 0;
+    -webkit-transition: opacity 600ms ease, -webkit-transform 600ms ease;
+    transition: opacity 600ms ease, -webkit-transform 600ms ease;
+    transition: opacity 600ms ease, transform 600ms ease;
+    transition: opacity 600ms ease, transform 600ms ease, -webkit-transform 600ms ease;
+}
+.strip .content h1 {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+}
+.strip .content p {
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+    -webkit-transition-delay: 600ms;
+    transition-delay: 600ms;
+    font-size: 20px;
+    font-family: "Courier New", Courier, monospace;
+}
+.strip.hoverin {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 1;
+    grid-column: 1 / span 5;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 2.92em;
+}
+.strip.hoverin .content {
+    font-size: .6em;
+    opacity: 1;
+    padding: 4em;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    width: 100%;
+}
+.strip.hoverin .content h1,
+.strip.hoverin .content p {
+    opacity: 1;
+}
+.strip.hoverin .content h1 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.strip.hoverin .content p {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.strip:nth-child(1) {
+    background-color: #0f0f0f;
+    color: white;
+}
+.strip:nth-child(1):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 1;
+    grid-column: 1 / span 5;
+}
+
+.strip:nth-child(2) {
+    background-color: #3d3c3a;
+    color: #afafaf;
+}
+.strip:nth-child(2):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 2;
+    grid-column: 2 / span 5;
+}
+
+.strip:nth-child(3) {
+    background-color: #707070;
+    color: #FFFFFF;
+}
+.strip:nth-child(3):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 3;
+    grid-column: 3 / span 5;
+}
+
+.strip:nth-child(4) {
+    background-color: #ddd4bc;
+    color: #FFFFFF;
+}
+.strip:nth-child(4):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 4;
+    grid-column: 4 / span 5;
+}
+
+.strip:nth-child(5) {
+    background-color: #f8dc4b;
+    color: #3c3c3c;
+}
+.strip:nth-child(5):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 5;
+    grid-column: 5 / span 5;
+}
+
+.strip:nth-child(6) {
+    background-color: #fba827;
+    color: #3a3a3a;
+}
+.strip:nth-child(6):hover {
+    -ms-grid-column-span: 5;
+    -ms-grid-column: 6;
+    grid-column: 6 / span 5;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+</head>
+<body>
+
+
+<div class="main">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+                <label for="rad1" class="rad1">案例</label>
+
+                <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"/>
+                <label for="rad2">教学</label>
+
+                <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+                <label for="rad3">练习</label>
+
+                <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+                <label for="rad4">小结</label>
+
+                <input name="rad" class="opt-5" id="rad5" type="radio"  checked="checked"  onClick="location.href='homework2.html'"/>
+                <label for="rad5">作业</label>
+
+                <div class="tracker"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" id="row1">
+
+
+
+        <div class="col-md-12 col-sm-12">
+
+            <div class="container">
+
+
+                <ul class="ul1">
+
+                    <li class="li1" style="margin-top: 50px;"><span class="red">题目一：盒模型练习</span><br><br>
+                        <p>要求：做一个盒子，文件名为sy7-1.html,要求如下：</p>
+                        <p class="span2">A.	盒子的宽（width）为380px，高（height）为380px</p>
+                        <p class="span2">B.	上右下左的padding分别为30px，10px，40px，20px</p>
+                        <p class="span2">C.	边框样式为dotted，上下边框的宽度为4px，左右边框的宽度为10px</p>
+                        <p class="span2">D.	左margin和右margin为auto（自动），上margin和下magin为20px。</p>
+                        <p class="span2">E.	有背景图片，背景图片为横向重复。</p>
+                        <p class="span2">F.	样式名称、边框颜色、背景图片自己给定。</p>
+                        <p class="span2">G.	进行代码优化，将padding、margin和border的代码进行优化。</p>
+                        提示：首先在body中采用div 标签定义一个有特定id名称的盒子，并在CSS代码中定义该id所对应盒子的相关属性。完成效果仅供参考。<br>
+                        <img src="../images/homework1.png" class="pic1"><br><br>
+                        <input type="button" value="练一练" class="button button-highlight button-pill button-large"  onClick="location.href='codeLight.html'">
+
+                    </li><br><br><br>
+                    <li class="li1"><span class="red">题目二：有超链接的内容展示盒子（用无序列表来实现）</span><br><br>
+                        <p>要求：</p>
+                        <p class="span2">①.	创建页面，在网页中插入盒子，并通过样式表定义盒子的宽、高和边框。</p>
+                        <p class="span2">②.	设置标题标签和列表的样式。其中要设置1号标题标签的文字大小、背景颜色、文字颜色、对齐方式、行高、边界为0；要设置列表边界为0，项目符号为无（列表中的list-style-type值为none），其他根据自己情况设定。</p>
+                        <p class="span2">③.	设定超链接的样式 #mybox2 a:link, #mybox2 a:visited, #mybox2 a:hover等的样式。</p>
+
+                        <p>本题效果设定</p>
+                        <img src="../images/homework2.png" class="pic1"><br><br>
+                        <input type="button" value="练一练" class="button button-highlight button-pill button-large"  onClick="location.href='codeLight.html'">
+
+
+                    </li><br><br><br>
+                    <li class="li1"><span class="red">题目三：简单水平导航条的设计</span><br><br>
+
+                        <p>要求：利用无序列表，制作一个简单的水平导航条，要求导航条在网页中水平居中。完成后的效果参考</p>
+                        <p>提示：</p>
+                        <p class="span2">（1）body中的布局结构可参考教材p295中的范例；</p>
+                        <p class="span2">（2）可结合每个导航块的尺寸，合理设置导航条所在盒子的宽和高，并通过盒子在页面中居中使得整个导航条居中，同时设置背景色等外观属性；</p>
+                        <p class="span2">（3）定义水平导航条中的ul为无列表符号，且边距和填充均为0；</p>
+                        <p class="span2">（4）定义每个li项目的宽度及浮动属性，使其在网页中合理的水平显示；并设置每个列表项目中的导航文本水平及居中对齐。</p>
+                        <p class="span2">（5）分别设置导航链接在不同状态下的样式外观。</p>
+                        <img src="../images/homework3.png" class="pic1"><br><br>
+                        <input type="button" value="练一练" class="button button-highlight button-pill button-large"  onClick="location.href='codeLight.html'">
+                    </li><br><br><br>
+                    <li class="li1"><span class="red">题目四：纵向导航条的设置</span><br><br>
+
+                        <p>要求：利用正文标题标记，创建类似图7-10所示的纵向导航条，背景图片等的设置任意。网页文件名为sy7-5.html。</p>
+                        <p>步骤提示：</p>
+                        <p class="span2">（1）完成边栏菜单的内容设计 。（用正文标题标记，如标题1，标题2）</p>
+                        <p class="span2">（2）设定边栏中盒子id、h1、h2的样式。</p>
+                        <p class="span2">（3）设定超链接的样式</p>
+                        <img src="../images/homework4.png" class="pic1"><br><br>
+                        <input type="button" value="练一练" class="button button-highlight button-pill button-large"  onClick="location.href='codeLight.html'">
+                    </li><br><br><br>
+                    <li class="li1"><span class="red">题目五：简单水平导航条的设计</span><br><br>
+
+                        <p>要求：利用无序列表，制作一个简单的水平导航条，要求导航条在网页中水平居中。完成后的效果参考</p>
+                        <p>提示：</p>
+                        <p class="span2">（1）body中的布局结构可参考教材p295中的范例；</p>
+                        <p class="span2">（2）可结合每个导航块的尺寸，合理设置导航条所在盒子的宽和高，并通过盒子在页面中居中使得整个导航条居中，同时设置背景色等外观属性；</p>
+                        <p class="span2">（3）定义水平导航条中的ul为无列表符号，且边距和填充均为0；</p>
+                        <p class="span2">（4）定义每个li项目的宽度及浮动属性，使其在网页中合理的水平显示；并设置每个列表项目中的导航文本水平及居中对齐。</p>
+                        <p class="span2">（5）分别设置导航链接在不同状态下的样式外观。</p>
+                        <img src="../images/homework5.jpg" class="pic1">
+                        <img src="../images/homework6.jpg" class="pic1"><br><br>
+                        <img src="../images/homework7.png" class="pic1"><br><br>
+                        <input type="button" value="练一练" class="button button-highlight button-pill button-large"  onClick="location.href='codeLight.html'">
+                    </li><br><br><br>
+
+
+                    <a href="#" id="look">查看答案</a>
+                </ul>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+</div>
+</body>
+</html>

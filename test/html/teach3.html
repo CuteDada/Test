@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学——水平/纵向导航栏</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+    <link rel="stylesheet" href="../css/teach.css">
+</head>
+<body>
+
+
+
+
+<div class="main" style="">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper">
+            <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+            <label for="rad1">案例</label>
+
+            <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"  checked="checked"/>
+            <label for="rad2">教学</label>
+
+            <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+            <label for="rad3">练习</label>
+
+            <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+            <label for="rad4">小结</label>
+
+            <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+            <label for="rad5">作业</label>
+
+            <div class="tracker"></div>
+         </div>
+    </div>
+</div>
+
+<div class="row" id="row2">
+
+
+
+            <div class="col-md-1 col-sm-12">
+                <div class="columns">
+
+                    <div class="container2">
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach.html'">第一章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach2.html'">第二章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach3.html'">第三章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach4.html'">第四章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach5.html'">第五章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach6.html'">第六章</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8  col-sm-12 ">
+                <div class="container">
+                    <ul id="tabs">
+
+                     <li><a href="#" name="#tab1">图文</a></li>
+
+                     <li><a href="#" name="#tab2">视频</a></li>
+
+                     <li><a href="#" name="#tab3">小练习</a></li>
+
+                    </ul>
+                <div id="content">
+
+                        <div id="tab1">
+                            <h2>导航栏中的两种形式</h2>
+                            1、导航栏=链接列表<br>
+                            作为标准的HTML基础一个导航栏是必须的
+                            。在我们的例子中我们将建立一个标准的HTML列表导航栏。
+                            导航条基本上是一个<span class="red">链接列表</span>，所以使用 &lt;ul&gt; 和 &lt;div&gt; 元素非常有意义：
+                            <ul>
+                                <li>background-image</li>
+                                <li>background-size</li>
+                                <li>background-origin</li>
+                                <li>background-clip</li>
+                            </ul>
+                            您还将学习如何使用多重背景图像。<br><br>
+
+                            2、<span class="red">垂直</span>导航栏<br>
+
+                            上面的代码，我们只需要 元素的样式，建立一个垂直的导航栏：<br>
+                            示例说明：<br>
+                            <span class="red">display:block</span> - 显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度<br>
+                            width:60px - 块元素默认情况下是<span class="red">最大宽度</span>。我们要指定一个60像素的宽度<br>
+                            提示：查看完全样式的垂直导航栏的示例.<br>
+                            注意： 请务必指定 元素在垂直导航栏的的宽度。如果省略宽度，IE6可能产生意想不到的效果。<br><br>
+
+                            3、<span class="red">水平</span>导航栏<br>
+
+                            有两种方法创建横向导航栏。使用内联或浮动的列表项。<br>
+                            这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法。<br><br>
+
+                            4、内嵌列表项<br>
+
+                            建立一个横向导航栏的方法之一是<span class="red">指定</span>元素<br><br>
+
+                            5、<span class="red">浮动列表</span>项<br>
+
+                            在上面的例子中链接有不同的宽度。<br>
+                            对于所有的链接宽度相等，浮动元素，并指定为 元素的宽度：<br><br>
+                        </div>
+
+                        <div id="tab2">
+                        </div>
+                        <div id="tab3">
+                        </div>
+                </div>
+                 </div>
+            </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="/demos/googlegg.js"></script>
+
+<script>
+    //For Demo only
+    var links = document.getElementsByClassName('link');
+    for(var i = 0; i <= links.length; i++)
+        addClass(i)
+
+
+    function addClass(id){
+        setTimeout(function(){
+            if(id > 0) links[id-1].classList.remove('hover');
+            links[id].classList.add('hover')
+        }, id*750)
+    }
+    var heightTol=$(window).height();
+    $(".main").height(heightTol);
+</script>
+<script>
+
+    function resetTabs(){
+
+        $("#content > div").hide(); //Hide all content
+
+        $("#tabs a").attr("id",""); //Reset id's
+
+    }
+
+
+
+    var myUrl = window.location.href; //get URL
+
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2
+
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+
+
+    (function(){
+
+        $("#content > div").hide(); // Initially hide all content
+
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+
+        $("#content > div:first").fadeIn(); // Show first tab content
+
+
+
+        $("#tabs a").on("click",function(e) {
+
+            e.preventDefault();
+
+            if ($(this).attr("id") == "current"){ //detection for current tab
+
+                return
+
+            }
+
+            else{
+
+                resetTabs();
+
+                $(this).attr("id","current"); // Activate this
+
+                $($(this).attr('name')).fadeIn(); // Show content for current tab
+
+            }
+
+        });
+
+
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+
+            if (myUrlTab == myUrlTabName + i) {
+
+                resetTabs();
+
+                $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+
+                $(myUrlTab).fadeIn(); // Show url tab content
+
+            }
+
+        }
+
+    })()
+
+</script>
+
+
+
+<script src="http://www.jq22.com/js/jq.js"></script>
+
+</body>
+</html>

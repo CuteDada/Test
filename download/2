@@ -1,0 +1,416 @@
+TITLE 1:
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>盒模型练习</title>
+<style type="text/css">
+<
+#box1{
+	height:380px;
+	width:380px;
+	padding:30px 10px 40px 20px;
+	border-style:dotted;
+	border-width:4px 10px;
+	margin:20px auto;
+	background-image:url(images/bgimage.jpg);
+	background-repeat:repeat-x;
+	border-color:#3F0;
+	color:#F90;
+	}
+-->
+</style>
+</head>
+
+<body>
+<div id=box1>
+盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习盒模型练习模型练习
+</div>
+</body>
+</html>
+
+
+
+TITLE 2:
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>有超链接的内容展示盒子</title>
+<style type="text/css">
+#mybox2 {
+	height: 250px;
+	width: 300px;
+	border: 1px solid #CCC;
+}
+#mybox2 h1 {
+	font-size: 30px;
+	line-height: 40px;
+	color: #333;
+	background-color: #F69;
+	text-align: center;
+	margin: 0px;
+}
+#mybox2 ul {
+	margin: 0px;
+	padding:5px;
+	list-style-type: none;
+	line-height:1.5em;
+}
+#mybox2 a:link {
+	text-decoration: none;
+	color:#00F;
+}
+#mybox2 a:visited {
+	text-decoration: none;
+	color:#666;
+}
+#mybox2 a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+<div id="mybox2">
+  <h1>国内新闻</h1>
+  <ul>
+    <li><a href="#">&middot;天宫1号9月27日至30日择机发射</a></li>
+    <li><a href="#">&middot;陕西四川河南洪灾57死</a></li>
+    <li><a href="#">&middot;商务部对欧盟不承认我市场经济地位失望</a></li>
+    <li><a href="#">&middot;公安部要求加大对重点逃犯抓捕力度</a></li>
+    <li><a href="#">&middot;国务院：公租房以40平米为主</a></li>
+  </ul>
+</div>
+</body>
+</html>
+
+
+
+
+TITLE 3:
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>简单水平导航条</title>
+<style type="text/css">
+#nav {
+	background-color: #CCC;
+	height: 35px;
+	width: 700px;
+	margin:0 auto;
+}
+#nav ul {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+#nav li {
+	line-height: 35px;
+	text-align: center;
+	float: left;
+	height: 35px;
+	width: 100px;
+}
+#nav a {
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+}
+#nav a:hover{
+	color:#FFF;
+	text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="#">首页</a></li>
+    <li><a href="#">新闻</a></li>
+    <li><a href="#">通知</a></li>
+    <li><a href="#">公告</a></li>
+    <li><a href="#">下载</a></li>
+    <li><a href="#">查询</a></li>
+    <li><a href="#">专栏</a></li>
+  </ul>
+</div>
+</body>
+</html>
+
+
+@charset "utf-8";
+/* CSS Document */
+#leftbar {		/*设定宽度、背景颜色和居中对齐*/
+	width: 150px;
+	background-color: #CCC;
+	text-align: center;
+}
+#leftbar h1 {	/*边栏中的一级菜单项*/
+	margin:0px;
+	color: #FFF;
+	background-color: #999;
+	font-size: 16px;
+	line-height: 2em;
+}
+#leftbar h2 {	/*边栏中的次级菜单项*/
+	font-size: 12px;
+	line-height: 2.5em;
+	margin: 0px;
+}
+#leftbar a {
+	color: #666;
+	text-decoration: none;
+}
+#leftbar a:hover {
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+TITLE 4:
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>边栏设计</title>
+<link href="sy7-5.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="leftbar">
+	  <h1>新闻纵横</h1>
+	  <h2><a href="#">国内新闻</a></h2>
+	  <h2><a href="#">国际新闻</a></h2>
+	  <h2><a href="#">娱乐新闻</a></h2>
+	  <h2><a href="#">财经新闻</a></h2>
+	  <h1>热点专栏</h1>
+	  <h2><a href="#">人物专访</a></h2>
+	  <h2><a href="#">感动浙江</a></h2>
+	  <h2><a href="#">食品安全</a></h2>
+	</div>
+</body>
+</html>
+
+
+@charset "utf-8";
+/* CSS Document */
+#leftbar {		/*设定宽度、背景颜色和居中对齐*/
+	width: 150px;
+	background-color: #CCC;
+	text-align: center;
+}
+#leftbar h1 {	/*边栏中的一级菜单项*/
+	margin:0px;
+	color: #FFF;
+	background-color: #999;
+	font-size: 16px;
+	line-height: 2em;
+}
+#leftbar h2 {	/*边栏中的次级菜单项*/
+	font-size: 12px;
+	line-height: 2.5em;
+	margin: 0px;
+}
+#leftbar a {
+	color: #666;
+	text-decoration: none;
+}
+#leftbar a:hover {
+	color: #FFF;
+}
+
+
+
+
+
+
+
+TITLE 5:
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>三级弹出式菜单</title>
+<style type="text/css">
+#menu {
+	height: 30px;
+	width: 800px;
+	margin:0 auto;
+	background-color:#DDD;
+}
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#menu ul li a {
+	font-size: 14px;
+	color: #000;
+	display:block;
+	text-decoration: none;
+	width: 99px;
+	text-align:center;
+	line-height:29px;
+	border:1px solid #fff;
+    border-width:1px 1px 0 0;
+}
+#menu ul li a:hover {
+	background:#b3ab79;
+    color:#FFF;
+}
+
+#menu ul li {
+	float:left;
+	position:relative;
+}
+
+#menu ul li ul {
+	display:none;
+}
+
+#menu ul li:hover ul {
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 31px;
+}
+#menu ul li:hover ul li a {
+	color: #333;
+	background-color: #faeec7;
+}
+#menu ul li:hover ul li a:hover {
+	background-color: #dfc184;
+}
+/*新代码起始位置*/
+#menu ul li:hover ul li ul
+{display: none;}
+
+#menu ul li:hover ul li:hover ul {
+	display:block;
+	position:absolute;
+	left:100px;
+	top:0;
+}
+/*新代码结束位置*/
+</style>
+</head>
+
+<body>
+<div id="menu">
+<ul>
+  <li><a href="#">菜单1</a>
+<ul>
+  <li><a href="#">子菜单11</a>
+  <ul>
+  <li><a href="#">子菜单111</a></li>
+      <li><a href="#">子菜单112</a></li>
+      <li><a href="#">子菜单113</a></li>
+      <li><a href="#">子菜单114</a></li>
+      <li><a href="#">子菜单115</a></li>
+  </ul></li>
+      <li><a href="#">子菜单12</a>
+        <ul>
+      <li><a href="#">子菜单121</a></li>
+      <li><a href="#">子菜单122</a></li>
+      <li><a href="#">子菜单123</a></li>
+      <li><a href="#">子菜单124</a></li>
+      <li><a href="#">子菜单125</a></li>
+  </ul>
+      </li>
+      <li><a href="#">子菜单13</a></li>
+      <li><a href="#">子菜单14</a></li>
+      <li><a href="#">子菜单15</a></li>
+  </ul>
+  </li>
+  <li><a href="#">菜单2 </a>
+<ul>
+  <li><a href="#">子菜单21</a></li>
+      <li><a href="#">子菜单22</a></li>
+      <li><a href="#">子菜单23</a></li>
+      <li><a href="#">子菜单24</a></li>
+      <li><a href="#">子菜单25</a></li>
+  </ul>
+  </li>
+  <li><a href="#">菜单3 </a>
+<ul>
+  <li><a href="#">子菜单31</a></li>
+  <li><a href="#">子菜单32</a></li>
+  <li><a href="#">子菜单33</a></li>
+      <li><a href="#">子菜单34</a></li>
+      <li><a href="#">子菜单35</a></li>
+  </ul>
+  </li>
+  <li><a href="#">菜单4 </a>
+<ul>
+  <li><a href="#">子菜单41</a></li>
+      <li><a href="#">子菜单42</a></li>
+      <li><a href="#">子菜单43</a></li>
+      <li><a href="#">子菜单44</a></li>
+      <li><a href="#">子菜单45</a></li>
+  </ul>
+  </li>
+  <li><a href="#">菜单5
+    </a>
+    <ul>
+      <li><a href="#">子菜单51</a></li>
+      <li><a href="#">子菜单52</a></li>
+      <li><a href="#">子菜单53</a></li>
+      <li><a href="#">子菜单54</a></li>
+      <li><a href="#">子菜单55</a></li>
+    </ul>
+  </li>
+  <li><a href="#">菜单6
+    </a>
+    <ul>
+      <li><a href="#">子菜单61</a></li>
+      <li><a href="#">子菜单62</a></li>
+      <li><a href="#">子菜单63</a></li>
+      <li><a href="#">子菜单64</a></li>
+      <li><a href="#">子菜单65</a></li>
+    </ul>
+  </li>
+  <li><a href="#">菜单7
+    </a>
+    <ul>
+      <li><a href="#">子菜单71</a></li>
+
+      <li><a href="#">子菜单72</a></li>
+
+      <li><a href="#">子菜单73</a></li>
+
+      <li><a href="#">子菜单74</a></li>
+
+      <li><a href="#">子菜单75</a></li>
+    </ul>
+  </li>
+  <li><a href="#">菜单8
+    </a>
+    <ul>
+      <li><a href="#">子菜单81</a></li>
+      <li><a href="#">子菜单82</a></li>
+      <li><a href="#">子菜单83</a></li>
+      <li><a href="#">子菜单84</a></li>
+      <li><a href="#">子菜单85</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

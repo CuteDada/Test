@@ -1,0 +1,97 @@
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+.pic{
+    width: 100%;
+}
+.title{
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    font-size: 60px;
+    color: #8c8c8c;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+}
+.div1,.div2,.div3,.div4,.div5{
+    position: absolute;
+    border: 4px dashed #aaa;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 38px;
+    font-size: 30px;
+}
+.div1{
+    top: 60%;
+    left: 5%;
+    background-color: #f5f5f5;
+
+}
+.div1:hover{
+    top: 60%;
+    left: 5%;
+    box-shadow: 7px 7px 10px 5px #cccccc;
+
+}
+.div2{
+    top: 74%;
+    left: 33%;
+    background-color: #f5f5f5;
+}
+.div2:hover{
+    top: 74%;
+    left: 33%;
+    box-shadow: 7px 7px 10px 5px #cccccc;
+}
+.div3{
+    top: 36%;
+    left: 42%;
+    background-color: #d9d9d9;
+}
+.div3:hover{
+    top: 36%;
+    left: 42%;
+    box-shadow: 7px 7px 10px 5px #9d9d9d;
+}
+.div4{
+    top: 65%;
+    left: 60%;
+    background-color: #dddddd;
+}
+.div4:hover{
+    top: 65%;
+    left: 60%;
+    box-shadow: 7px 7px 10px 5px #9d9d9d;
+}
+.div5{
+    top: 36%;
+    left: 73%;
+    background-color: #cccccc;
+}
+.div5:hover{
+    top: 36%;
+    left: 73%;
+    box-shadow: 7px 7px 10px 5px #9d9d9d;
+}
+
+.div1,.div2,.div3,.div4,.div5{
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+}
+.div1:hover,.div2:hover,.div3:hover,.div4:hover,.div5:hover{
+    background-color: #bbbbbb;
+    transform:rotate(360deg) scale(1.1);
+    -webkit-transform:rotate(360deg) scale(1.1);
+    -moz-transform:rotate(360deg) scale(1.1);
+    -o-transform:rotate(360deg) scale(1.1);
+    -ms-transform:rotate(360deg) scale(1.1);
+    cursor: cell;
+}

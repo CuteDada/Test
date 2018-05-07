@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写代码</title>
+    <link rel="stylesheet" type="text/css"href="../css/codemirror.css"/>
+    <link rel="stylesheet" type="text/css"href="../css/show-hint.css"/>
+    <link rel="stylesheet" type="text/css"href="../css/index.css"/>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"src="../js/codemirror.js"></script>
+    <script src="../js/show-hint.js"></script>
+    <script src="../js/xml-hint.js"></script>
+    <script src="../js/html-hint.js"></script>
+    <script src="../js/xml.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/css.js"></script>
+    <script src="../js/htmlmixed.js"></script>
+    <script src="../js/index.js"></script>
+    <style type="text/css">
+        .CodeMirror {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+</head>
+
+
+<body>
+    <script type="text/javascript">
+        window.onload = function() {
+            editor = CodeMirror(document.getElementById("code"), {
+                mode: "text/html",
+                extraKeys: {"Ctrl-Space": "autocomplete"},
+                value:"<p>请输入html</p>"
+            });
+        };
+    </script>
+
+    <script>
+        function fun1() {
+            var code = editor.getValue();
+            $("#right-show").html(code);
+            var height= 0.8*$(window).height();
+            var height2=height-47;
+            $("#code").height(height);
+            $("#right-show").height(height2);
+        }
+    </script>
+
+    <div class="content">
+
+    <div id="code" class="inputInfo">
+        <div class="inputInfo-title">
+            <div class="inputInfo-div1">源代码</div>
+            <input type="button" value="点我" class="inputInfo-div2" onclick="fun1()">
+        </div>
+    </div>
+
+
+    <div class="right" >
+        <div class="inputInfo-title">
+            <div class="inputInfo-div1">运行结果</div>
+        </div>
+        <div id="right-show">
+
+        </div>
+    </div>
+    </div>>
+
+    <button class="trainning1"  onClick="location.href='homework2.html'">返回</button>
+
+    <img src="../images/writePic.png" class="writePic">
+</body>
+</html>

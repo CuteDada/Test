@@ -1,0 +1,96 @@
+.inputInfo{
+    width: 40%;
+    font-size: 18px;
+    border: 1px solid #8c8c8c;
+    display: inline-block;
+    margin-left: 8%;
+    margin-top: 40px;
+}
+.inputInfo-title{
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #8c8c8c;
+    height: 44px;
+    position: relative;
+}
+.inputInfo-div1{
+    display: inline-block;
+    padding:4px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.inputInfo-div2{
+    display: inline-block;
+    padding:4px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 5px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    right: 20px;
+}
+.right{
+    width: 40%;
+    border: 1px solid #8c8c8c;
+    display: inline-block;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: #ffffff;
+}
+
+.click{
+    position: absolute;
+}
+#right-show{
+    display: block;
+    padding-left: 20px;
+}
+.trainning1{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: gold;
+    border-radius: 8px;
+}
+.writePic{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.content{
+
+}

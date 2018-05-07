@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>教学——多级弹出菜单</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/homework.css">
+    <link rel="stylesheet" href="../css/teach.css">
+</head>
+<body>
+
+
+
+
+<div class="main" style="">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="wrapper">
+            <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+            <label for="rad1">案例</label>
+
+            <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"  checked="checked"/>
+            <label for="rad2">教学</label>
+
+            <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+            <label for="rad3">练习</label>
+
+            <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"/>
+            <label for="rad4">小结</label>
+
+            <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+            <label for="rad5">作业</label>
+
+            <div class="tracker"></div>
+         </div>
+    </div>
+</div>
+
+<div class="row" id="row2">
+
+
+
+            <div class="col-md-1 col-sm-12">
+                <div class="columns">
+
+                    <div class="container2">
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach.html'">第一章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach2.html'">第二章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach3.html'">第三章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach4.html'">第四章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach5.html'">第五章</div>
+                        </div>
+                        <div class="link">
+                            <div class="text" onClick="location.href='teach6.html'">第六章</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8  col-sm-12 ">
+                <div class="container">
+                    <ul id="tabs">
+
+                     <li><a href="#" name="#tab1">图文</a></li>
+
+                     <li><a href="#" name="#tab2">视频</a></li>
+
+                     <li><a href="#" name="#tab3">小练习</a></li>
+
+                    </ul>
+                <div id="content">
+
+                        <div id="tab1">
+                            <h2>弹出式导航栏</h2>
+                            1、基本下拉菜单<br>
+                            当鼠标移动到指定元素上时，会出现下拉菜单。<br>
+
+                            <span class="red">HTML 部分：</span><br>
+                            我们可以使用任何的 HTML元素来打开下拉菜单，如：&lt;span&gt;, 或 a &lt;button&gt 元素。
+                            使用容器元素 (如： &lt;div&gt) 来创建下拉菜单的内容，并放在任何你想放的位置上。
+                            使用 &lt;div&gt;元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。<br>
+                            <span class="red">CSS 部分：</span><br>
+                            <ul>
+                                <li>.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。</li>
+                                <li>.dropdown-content 类中是<span class="red">实际的下拉菜单</span>。默认是隐藏的，在鼠标移动到指定元素后会显示。 </li>
+                                <li>:hover 选择器用于在用户将鼠标移动到下拉按钮上时显示下拉菜单。</li>
+                            </ul>
+
+                            2、下拉菜单<br>
+
+                            创建下拉菜单，并允许用户选取列表中的某一项：
+                            这个实例类似前面的实例，当我们在下拉列表中添加了链接，并设置了样式：<br><br>
+
+                            3、下拉内容对齐方式<br>
+                            <ul>
+                                <li><span class="red">float:left;</span></li>
+                                <li><span class="red">float:right;</span></li>
+                            </ul>
+                            如果你想设置右浮动的下拉菜单内容方向是从右到左，而不是从左到右，可以添加以下代码 <span class="red">right: 0</span>;
+
+
+                        </div>
+
+                        <div id="tab2">
+                        </div>
+                        <div id="tab3">
+                        </div>
+                </div>
+                 </div>
+            </div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="/demos/googlegg.js"></script>
+
+<script>
+    //For Demo only
+    var links = document.getElementsByClassName('link');
+    for(var i = 0; i <= links.length; i++)
+        addClass(i)
+
+
+    function addClass(id){
+        setTimeout(function(){
+            if(id > 0) links[id-1].classList.remove('hover');
+            links[id].classList.add('hover')
+        }, id*750)
+    }
+    var heightTol=$(window).height();
+    $(".main").height(heightTol);
+</script>
+<script>
+
+    function resetTabs(){
+
+        $("#content > div").hide(); //Hide all content
+
+        $("#tabs a").attr("id",""); //Reset id's
+
+    }
+
+
+
+    var myUrl = window.location.href; //get URL
+
+    var myUrlTab = myUrl.substring(myUrl.indexOf("#")); // For localhost/tabs.html#tab2, myUrlTab = #tab2
+
+    var myUrlTabName = myUrlTab.substring(0,4); // For the above example, myUrlTabName = #tab
+
+
+
+    (function(){
+
+        $("#content > div").hide(); // Initially hide all content
+
+        $("#tabs li:first a").attr("id","current"); // Activate first tab
+
+        $("#content > div:first").fadeIn(); // Show first tab content
+
+
+
+        $("#tabs a").on("click",function(e) {
+
+            e.preventDefault();
+
+            if ($(this).attr("id") == "current"){ //detection for current tab
+
+                return
+
+            }
+
+            else{
+
+                resetTabs();
+
+                $(this).attr("id","current"); // Activate this
+
+                $($(this).attr('name')).fadeIn(); // Show content for current tab
+
+            }
+
+        });
+
+
+
+        for (i = 1; i <= $("#tabs li").length; i++) {
+
+            if (myUrlTab == myUrlTabName + i) {
+
+                resetTabs();
+
+                $("a[name='"+myUrlTab+"']").attr("id","current"); // Activate url tab
+
+                $(myUrlTab).fadeIn(); // Show url tab content
+
+            }
+
+        }
+
+    })()
+
+</script>
+
+
+
+<script src="http://www.jq22.com/js/jq.js"></script>
+
+</body>
+</html>

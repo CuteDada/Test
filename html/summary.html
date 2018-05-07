@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小结</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/homework.js"></script>
+
+    <link rel="stylesheet" href="../css/summary.css">
+</head>
+<body>
+
+
+<div class="main">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="wrapper">
+                <input name="rad" class="opt-1" id="rad1" type="radio"  onClick="location.href='example.html'"/>
+                <label for="rad1">案例</label>
+
+                <input name="rad" class="opt-2" id="rad2" type="radio"  onClick="location.href='chapter2.html'"/>
+                <label for="rad2">教学</label>
+
+                <input name="rad" class="opt-3" id="rad3" type="radio" onClick="location.href='homework.html'"/>
+                <label for="rad3">练习</label>
+
+                <input name="rad" class="opt-4" id="rad4" type="radio" onClick="location.href='summary.html'"  checked="checked"/>
+                <label for="rad4">小结</label>
+
+                <input name="rad" class="opt-5" id="rad5" type="radio"  onClick="location.href='homework2.html'"/>
+                <label for="rad5">作业</label>
+
+                <div class="tracker"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="row1">
+
+
+
+        <div class="col-md-12 col-sm-12">
+             <div class="container" id="containerHome">
+
+
+                <ul class="ul1">
+                    <li id="li1" style="margin-top: 50px;">
+                        1.在布局前，要对body、ul、li、td进行<span class="red">边距清零</span>，消除自带内外边距
+                    </li><br>
+                    <li id="li2">
+                        2.在table设置中，可以设置边缘线是否重叠，因为本身是表格的原因，border-collapse本身有三个值：<span class="red">separate</span>、<span class="red">collapse</span>，<span class="red">separate</span>。
+                    </li><br>
+                    <li id="li3">
+                        3.<span class="red">border-right</span>：1px solid grey，该元素是设置<span class="red">右边缘</span>的线，值分别为大小，类型，颜色。大小分为四条边的类型，细边框(thin)，中等边框(medium)，粗边框(thick);类型分为solid(实线)、dashed(虚线)、dotted(点状边框)；
+                    </li><br>
+                    <li id="li4">
+                        4.<span class="red">text-align</span>：right，该元素把文本呢排列到右边，可用的值为左(left)、中(center)、右(right)、justify(两端对齐)；
+                    </li><br>
+                    <li id="li5">
+                        5.td:hover { color:orange; cursor: pointer; },该元素表示当<span class="red">鼠标进入区域</span>时，颜色转变，及鼠标手势转变。
+                    </li><br>
+                    <li id="li6">
+                        6.<span class="red">display</span>：none，该元素表示元素生成的类型。取值一般为none(不显示、隐藏)、block(鼠标进入显示)、inline(直接显示，默认)
+                    </li><br>
+                    <li id="li7">
+                        7.float:left，该元素表示所选内容<span class="red">向左浮动</span>，如果空间不够，则向下填充
+                    </li><br>
+
+
+                </ul>
+             </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
